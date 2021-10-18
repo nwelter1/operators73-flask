@@ -16,6 +16,8 @@
     - Mac
         - `python -m venv <nameofvenv>`
         - `source <nameofvenv>/bin/activate`
+- Installing Flask into virtualenv
+    - `pip install flask`
 - Add flask environment variables:
     - Windows
         - `set FLASK_ENV=development`
