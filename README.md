@@ -29,3 +29,20 @@
 [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/ "Main Flask Docs")
 
 [Flask Blueprint Docs](https://flask.palletsprojects.com/en/1.1.x/blueprints/ "Flask Blueprint Docs")
+
+# Day 2
+Topics Covered:
+- Flask Forms with Flask-WTF
+- Getting Data from a form
+- Rendering a form to HTML
+- Creating Models
+- Migrating Models
+- Using Environment variables with `.env`
+
+## Python Packages
+Flask-WTF: `pip install Flask-WTF`
+Flask SQLAlchemy: `pip install Flask-SQLAlchemy`
+Flask Migrate: `pip install Flask-Migrate`
+Python-dotenv: `pip install python-dotenv`
+psycopg2: `pip install psycopg2` (or for mac: `pip install psycopg2-binary==2.8.6`)
+Email_Validator: `pip install email_validator`
