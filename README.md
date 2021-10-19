@@ -39,6 +39,11 @@ Topics Covered:
 - Migrating Models
 - Using Environment variables with `.env`
 
+## Flask-Migrate Commands
+- Initialize an empty migrations repo: `flask db init`
+- Stage new model changes: `flask db migrate -m "<message>"`
+- 'Push' changes to create new tables: `flask db upgrade`
+
 ## Python Packages
 Flask-WTF: `pip install Flask-WTF`
 Flask SQLAlchemy: `pip install Flask-SQLAlchemy`
