@@ -51,3 +51,16 @@ Flask Migrate: `pip install Flask-Migrate`
 Python-dotenv: `pip install python-dotenv`
 psycopg2: `pip install psycopg2` (or for mac: `pip install psycopg2-binary==2.8.6`)
 Email_Validator: `pip install email_validator`
+
+
+# Day 3
+
+## Topics Covered
+- User authentication
+- Protected Routes
+- User sessions
+- Flash Messaging
+- Conditional formatting (Jinja 'if' statements)
+
+## Python Packages
+- Flask Login: `pip install flask-login`
