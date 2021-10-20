@@ -3,14 +3,24 @@ from flask_migrate import Migrate
 from datetime import datetime
 import uuid
 # Adding in Flask Security for passwords
-from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 # creates a hex token for eventual API access
 import secrets
 
+# importing login manager package and user loader for our db table
+from flask_login import LoginManager, UserMixin
+
+
+
 db = SQLAlchemy()
+login_manager = LoginManager()
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(user_id)
 
 
-class User(db.Model):
+class User(db.Model, UserMixin):
     id = db.Column(db.String, primary_key = True)
     email = db.Column(db.String(150), nullable = False)
     password = db.Column(db.String, nullable = False)
