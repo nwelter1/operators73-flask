@@ -64,3 +64,21 @@ Email_Validator: `pip install email_validator`
 
 ## Python Packages
 - Flask Login: `pip install flask-login`
+
+# Day 4
+
+## Topics Covered
+- Token validation
+- Creating custom wrappers (decorators)
+- Helper functions
+- Data marshalling
+
+- CRUD Operations (Request Methods)
+    - CREATE (POST)
+    - RETRIEVE (GET)
+    - UPDATE (POST, PUT)
+    - DELETE (DELETE)
+
+## Python Packages
+- Flask Marshmallow: `pip install Flask-Marshmallow`
+- Flask-Cors: `pip install Flask-Cors`
