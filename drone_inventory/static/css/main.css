@@ -59,3 +59,27 @@
 #features-section{
     margin: 8vw;
 }
+
+/*  Community */
+#drone-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+/* end community */
+/* Start Footer */
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+#footer-logo{
+    width: 100%;
+    max-width: 100%;
+}
+
+#footer{
+    border-top: 3px solid black;
+    margin-top: 20vh;
+}
