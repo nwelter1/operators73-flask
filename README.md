@@ -84,3 +84,49 @@ Email_Validator: `pip install email_validator`
 - Flask-Cors: `pip install Flask-Cors`
 
 
+# Day 5
+
+## Topics Covered
+- Heroku Hosting
+- requirements.txt
+
+## Python Packages
+- Gunicorn: `pip install gunicorn`
+
+## Steps for hosting (Local Machine)
+- Install Gunicorn
+- Make a dependency list: `pip freeze > requirements.txt`
+- Add `Procfile` into your base directory:
+    - `web: gunicorn <your-app-folder-name>:app --preload --timeout 60`
+- Change config.py variable for db URI:
+    - `SQLALCHEMY_DATABASE_URI = os.environ.get('DEPLOY_DATABASE_URI')`
+- gitignore the following:
+    - .env
+    - migrations
+    - your virtual env folder
+    - __pycache__ (not necessary, but it is unneeded)
+- Push final changes to a Github Repo
+
+## Steps for hosting (Heroku)
+- Create a new app
+- Connect it to your newly created Github Repo
+- Resources Menu:
+    - Add-ons:
+        - `Heroku Postgres`
+- Settings Menu:
+    - Reveal Config Vars
+        - Create a new variable:
+            - `DEPLOY_DATABASE_URI`
+            - Copy the value for DATABASE_URL above and paste here
+                - Add 'ql' to 'postgres' (URI should start with "postgresql://...")
+- Deploy Menu:
+    - Click `Deploy Branch` at the bottom of the page
+
+- More(Button - top right):
+    - Run console (type `bash` and hit enter)
+        - `export FLASK_APP=<your-app-name>`
+        - `export FLASK_ENV=production`
+        - `flask db init`
+        - `flask db migrate -m "<message>"`
+        - `flask db upgrade`
+
