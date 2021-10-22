@@ -107,7 +107,7 @@ Email_Validator: `pip install email_validator`
     - __pycache__ (not necessary, but it is unneeded)
 - Push final changes to a Github Repo
 
-## Heroku
+## Steps for hosting (Heroku)
 - Create a new app
 - Connect it to your newly created Github Repo
 - Resources Menu:
