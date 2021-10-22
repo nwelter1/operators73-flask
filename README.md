@@ -82,3 +82,5 @@ Email_Validator: `pip install email_validator`
 ## Python Packages
 - Flask Marshmallow: `pip install Flask-Marshmallow`
 - Flask-Cors: `pip install Flask-Cors`
+
+
